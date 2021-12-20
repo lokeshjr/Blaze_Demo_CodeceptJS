@@ -1,5 +1,5 @@
-# acceptance-tests
-Build acceptance tests for Weather app using CodeceptJS
+# Blaze Demo UI Automation
+Build acceptance tests for Build Demo app using CodeceptJS
 
 CodeceptJS is a modern end to end testing framework with a special BDD-style syntax. The tests are written as a linear scenario of the user's action on a site.
 
@@ -15,34 +15,6 @@ For the current project - I am using Webdriver helper as the backend. There are 
 * RetryFailedStep plugin retries a failed step for 10 times. Using this hard wait can be eliminated.
 * Chunks - CodeceptJS concept for running tests parallely
 * Allure report for reporting purpose
-
-# Structure:
-
-* data
-  - test_data.js
-* pages
-  - forecast_home_page.js
-* tests
-  - forecast_test.js
-  - negative_test.js
-* .gitignore
-* codecept.conf.js
-* package.json
-* package-lock.json
-* steps_file.js
-* steps.d.ts
-
-# Scenarios covered are:
-1.  Enter city name, get 5 day weather forecast
-2.  Select day, get 3 hourly forecast
-3.  Select day again, hide 3 hourly forecast
-4.  Daily forecast should summarise the 3 hour data:
-    - Most dominant (or current) condition
-    - Most dominant (or current) wind speed and direction
-    - Aggregate rainfall
-    - Minimum and maximum temperature
-5.  Negative scenario - validation errrors
-    
 
     
 # Running the tests locally - 
